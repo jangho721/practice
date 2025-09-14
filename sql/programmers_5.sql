@@ -1,0 +1,8 @@
+-- 최댓값 구하기
+-- 가장 최근에 들어온 동물은 언제 들어왔는지 조회
+-- MAX(), DATE Type
+
+SELECT DATETIME
+FROM ANIMAL_INS
+WHERE 1=1
+AND DATETIME = (SELECT MAX(DATETIME) FROM ANIMAL_INS);
